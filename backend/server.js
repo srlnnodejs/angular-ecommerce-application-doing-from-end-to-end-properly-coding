@@ -78,7 +78,7 @@ const departmentRoutes = require('./routes/department');
 const categoryRoutes = require('./routes/category');
 const productRoutes = require('./routes/product');
 const shippingRoutes = require('./routes/shipping');
-const customerRoutes = require('./routes/customer');
+//const customerRoutes = require('./routes/customer');
 const orderRoutes = require('./routes/order');
 
 app.get('/', function (request, response, next) {
@@ -92,7 +92,7 @@ app.use('/api/department', departmentRoutes);
 app.use('/api/category', categoryRoutes);
 app.use('/api/product', productRoutes);
 app.use('/api/shipping', shippingRoutes);
-app.use('/api/customer', customerRoutes);
+//app.use('/api/customer', customerRoutes);
 app.use('/api/order', orderRoutes);
 
 // set the app to listen on the port
